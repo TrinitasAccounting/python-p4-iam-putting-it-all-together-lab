@@ -11,4 +11,4 @@ class User(db.Model, SerializerMixin):
 class Recipe(db.Model, SerializerMixin):
     __tablename__ = 'recipes'
     
-    pass
+    id = db.Column(db.Integer, primary_key=True)
